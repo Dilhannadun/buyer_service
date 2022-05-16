@@ -34,7 +34,7 @@ jobs:
         with:
           dockerfile: 'Dockerfile'
           image: ${{ secrets.DOCKER_USERNAME_CH }}/buyer-service-k8s
-          tags: latest
+          tags: v1, latest
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME_CH }}
           password: ${{ secrets.DOCKER_PASSWORD_CH }}
