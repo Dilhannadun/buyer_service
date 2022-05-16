@@ -33,11 +33,11 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
           dockerfile: 'Dockerfile'
-          image: ${{ secrets.DOCKER_USERNAME_CH }}/buyer-service-k8s
+          image: ${{ secrets.DOCKER_USERNAME_N }}/buyer-service-k8s
           tags: v1, latest
           registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME_CH }}
-          password: ${{ secrets.DOCKER_PASSWORD_CH }}
+          username: ${{ secrets.DOCKER_USERNAME_N }}
+          password: ${{ secrets.DOCKER_PASSWORD_N }}
 
     ## Repeat steps Install dependencies and build docker image for other services
 
