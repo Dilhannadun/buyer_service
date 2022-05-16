@@ -39,7 +39,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME_N }}
           password: ${{ secrets.DOCKER_PASSWORD_N }}
 
-    ## Repeat steps Install dependencies and build docker image for other services
+    ## Repeat steps Install dependencies and build docker image for other services here
 
   deploy: 
     name: Deploy services to k8s cluster
